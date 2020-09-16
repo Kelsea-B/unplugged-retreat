@@ -228,13 +228,22 @@ footer .social-icons {
 }
 
 footer .social-icons p {
+  border-radius: 50%;
+  width:40px;
+  height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.social-icons i p {
+  font-size:1.3125em;
+}
+
 footer .copyright {
   margin:20px 0;
+  justify-content: center;
+
 }
 
 /*-------------------------Mobile Styles - Homepage -----------------------*/
