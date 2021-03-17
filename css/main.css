@@ -86,102 +86,123 @@ textarea {
 }
 
 /* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* ==========================================================================
    Author's custom styles
    ========================================================================== */
 /*General Styles*/
 
-html{
+  html{
   font-size: 16px;
+  }
 
-}
-
-body{
+  body{
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
-  color:#e2e3ed;
+  color: #e2e3ed;
   text-align: left;
+  }
 
-}
-
-ul,ol {
+  ul,
+  ol {
   list-style: none;
-}
+  margin: 0;
+  padding: 0;
+  }
 
-a {
+  a {
   color: #e2e3ed;
   text-decoration: none;
-}
+  }
 
-h1 {
-  font-weight: normal;
-}
-
-h2{
+  h2 {
   font-family: 'Poppins', sans-serif;
-  font-size:1.875em;
-  font-weight:500;
-}
-
-h3,h4{
-  font-family: 'Poppins', sans-serif;
-  margin: 20px 0;
-  font-size: 1.125em;
+  font-size: 1.875em;
   font-weight: 500;
-}
+  margin: 0;
+  }
 
-.reviews h3, p {
-  text-align:left;
+  h3,
+  h4{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  margin: 20px 0;
+  }
 
-}
-
-p {
+  p {
   font-size: .875em;
-  line-height:1.285;
-}
+  line-height: 1.285;
+  }
+
+  img {
+  width: 100%;
+  }
+
+  figure {
+  margin: 0;
+  }
 
 
-address {
+  address {
   font-style: normal;
 
-}
+  }
 
-.content-wrapper {
+  .content-wrapper {
   width: 90%;
   margin: 50px 0;
-}
+  }
 
 
 /*--------------------- Base Header - Footer Styles ------------------------ */
 
-header,
-footer {
+  header,
+  footer {
   background-color: #202322;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-}
-header {
-  padding:15px 0;
-}
+  }
 
-header .content-wrapper{
+  header {
+  padding: 15px 0;
+  }
+
+  header .content-wrapper {
   margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  }
 
-}
+  header figure {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow:row wrap;
+  }
 
-.header-divider {
+  .header-divider {
   background-color:#3a3a3a;
-  width: 100%;
   height: 1px;
+  width: 100%;
   margin: 10px 0 20px 0;
-}
+  }
 
-header nav {
+  header nav {
   width: 60%;
   font-size: 1.125em;
   font-weight: 700;
@@ -190,75 +211,74 @@ header nav {
   justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
-
-}
+  }
 
 header nav ul {
+  width: 100%;
   display: flex;
   justify-content: space-around;
-  width:100%;
-}
+  }
 
-header nav ul li {
+  header nav ul li {
   font-size: 1.125em;
-}
+  }
 
-footer {
+  footer {
   text-align: center;
   flex-direction: column;
-}
+  }
 
-footer p{
+footer p {
   margin: 0;
 }
 
-footer .content-wrapper {
-  width:55%;
+  footer .content-wrapper {
+  width: 55%;
   margin: 50px 0;
-}
+  }
 
-footer .contact {
+  footer .contact {
   margin-bottom: 50px;
-}
+  }
 
-footer .social-icons {
+  footer .social-icons {
   display: flex;
   justify-content:space-around;
   align-items: center;
-}
+  }
 
-footer .social-icons p {
+  footer .social-icons p {
+  background-color: #527158;
   border-radius: 50%;
-  width:40px;
+  width: 40px;
   height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
-}
+  }
 
-.social-icons i p {
+  footer .social-icons p i {
   font-size:1.3125em;
-}
+  }
 
-footer .copyright {
-  margin:20px 0;
-  justify-content: center;
-
-}
+  footer .copyright {
+  margin: 20px 0;
+  }
 
 /*-------------------------Mobile Styles - Homepage -----------------------*/
 
 /* Hero Area */
 
 .hero-area {
-  background-image: url('../img/hero-area.jpg');
+  background-image: url(../img/hero-area.jpg);
   background-size: cover;
-  background-repeat: no-repeat;
   background-position: center;
-  min-height:500px;
+  background-repeat: no-repeat;
+  min-height: 500px;
   display: flex;
   justify-content: center;
-  flex-flow:row wrap;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 .hero-area h1 {
@@ -332,7 +352,7 @@ input[type=button] {
 
 .features i {
   font-size: 3.75em;
-  margin-bottom: 15px;
+  margin-bottom: 40px;
 }
 
 .features p {
@@ -340,9 +360,7 @@ input[type=button] {
   margin: 0;
 }
 
-.fontawesome-icon {
-  align-items: center;
-}
+
 
 
 /* Reviews */
@@ -377,14 +395,14 @@ input[type=button] {
   width: 100%;
   height: 0;
   padding-bottom: 125%;
-  overflow:hidden;
+  overflow: hidden;
   position: relative;
 }
 
 .map iframe {
   width: 100%;
   height: 100%;
-  position:absolute;
+  position: absolute;
   top: 0;
   left: 0;
 }
@@ -420,6 +438,7 @@ input[type=button] {
   align-items: center;
   flex-flow: row wrap;
 }
+
 .faq h2 {
   margin-bottom: 40px;
   line-height: 1;
@@ -432,17 +451,6 @@ input[type=button] {
 .faq-content h4 {
   line-height: 1.333;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* ==========================================================================
@@ -535,8 +543,8 @@ input[type=button] {
 
 @media only screen and (min-width: 768px) {
   /*Tablet styles here*/
-  .content-wrapper{
-    max-width:640px;
+  .content-wrapper {
+    max-width: 640px;
     margin: 100px 0;
   }
 
@@ -551,37 +559,37 @@ input[type=button] {
   }
   /*Header*/
 
-header {
-  justify-content: space-around;
-  padding:33px 0;
+  header {
+    justify-content: space-around;
+    padding: 33px 0;
+  }
 
-}
+  header .content-wrapper {
+    width: 100%;
+    justify-content: space-between;
+  }
 
-header .content-wrapper {
-  width:100%;
-  justify-content: space-between;
+  header figure {
+    width: 30%;
+  }
 
-}
+  header nav {
+    width: 20%;
+  }
 
-header figure {
-  width: 30%;
-}
+  header nav ul {
+    justify-content: space-between;
+  }
 
-header nav {
-  width:20%;
-}
-
-header nav ul {
-  justify-content: space-between;
-
-
-}
   .header-divider {
     display: none;
-
   }
 
   /*Hero Area*/
+
+  .hero-area {
+    min-height: 600px;
+  }
 
   .hero-area h1 {
     font-size: 3em;
@@ -592,15 +600,15 @@ header nav ul {
   /*Aside*/
 
   aside .content-wrapper {
-    margin:50px 0;
+    margin: 50px 0;
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     flex-flow: row wrap;
   }
 
   aside .content-wrapper .form-description,
   aside .content-wrapper .form {
-    width:40%;
+    width: 40%;
     margin: 0;
   }
 
@@ -614,17 +622,21 @@ header nav ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-flow:row wrap;
+    flex-flow: column wrap;
     flex-basis: 50%;
   }
 
-  .features .features-item-description{
-    width:62%;
+  .features .features-item-description {
+    width: 62%;
+  }
+
+  .features i {
+    margin-bottom: 30px;
   }
 
   /*Reviews*/
 
-  .reviews article{
+  .reviews article {
     display: flex;
     justify-content: space-between;
 
@@ -634,19 +646,21 @@ header nav ul {
     width: 85%;
   }
 
+  .reviews article figure,
   .reviews article div {
-    width:49%;
+    width: 49%;
   }
 
   .reviews h3 {
     width: 75%;
     margin: 0;
   }
+
   /*Footer*/
 
   footer .content-wrapper {
-    width:65%;
-    margin:100px 0;
+    width: 65%;
+    margin: 100px 0;
   }
 
   footer .footer-content {
@@ -669,8 +683,13 @@ header nav ul {
     line-height: 1.285;
   }
 
+  footer .social-icons {
+    width: 12.5em;
+    justify-content: space-between;
+  }
+
   footer .copyright {
-    width:100%;
+    width: 100%;
   }
 
   /*------------About Page -----------------*/
@@ -682,7 +701,7 @@ header nav ul {
     padding-top: 20px;
   }
 
-  .mission-content p{
+  .mission-content p {
     width: 45%;
   }
 
@@ -691,42 +710,41 @@ header nav ul {
   }
 
   .contact-section .content-wrapper h2 {
-    width:80%;
+    width: 80%;
   }
 
-.contact-content {
+  .contact-content {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-}
+  }
 
-.contact-content h4{
+  .contact-content h4 {
   font-size: 1.5em;
-}
+  }
 
 /*-----------FAQ Page---------------*/
 
-.faq .content-wrapper {
+  .faq .content-wrapper {
   justify-content: space-between;
-}
+  }
 
-.faq-content {
+  .faq-content {
   flex-basis: 45%;
-}
+  }
 
-.faq h2 {
-  width:100%;
-}
-}
+  .faq h2 {
+  width: 100%;
+  }
 
-.faq h4,
-p {
+  .faq h4,
+  .faq p {
   font-size: .875em;
   line-height: 1.125;
-}
+  }
 
 
-@media only and screen (min-width: 1200px){
+@media only screen and (min-width: 1200px){
   /*Desktop styles here*/
 
   header {
@@ -734,7 +752,7 @@ p {
   }
 
   .content-wrapper {
-    max-width:960px;
+    max-width: 960px;
   }
 
   h2 {
@@ -768,23 +786,27 @@ p {
    width:30%;
  }
 
- /*Features*/
-
- .features h2{
-   width:90%;
+ .form-descpription p {
+   font-size: 1.125em;
  }
 
- .features article{
+ /*Features*/
+
+ .features h2 {
+   width: 90%;
+ }
+
+ .features article {
    flex-basis: 33%;
  }
 
  /*Reviews*/
 
- .reviews h2{
+ .reviews h2 {
    padding-bottom: 50px;
  }
  .reviews article div {
-   width:42%;
+   width: 42%;
  }
 
  footer h4 {
@@ -793,14 +815,18 @@ p {
 
  /* ========================About Page ==================== */
 
-.map figure {
+ .map figure {
   padding-bottom: 37.5%;
-}
+  }
 
- .mission h2,
- .content-section .content-wrapper h2 {
-   width:95%;
+  .mission h2,
+  .contact-section .content-wrapper h2 {
+   width: 95%;
    font-size: 3em;
+ }
+
+ .contact-content h4 {
+   font-size: 1.875em;
  }
 
 
